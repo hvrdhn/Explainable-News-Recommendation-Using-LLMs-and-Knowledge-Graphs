@@ -11,7 +11,7 @@ news_recomm/
 └── scripts/
     ├── check_data.py              # Data validation and inspection
     └── verify_setup.py            # Environment setup verification
-</code></pre
+</code></pre>
 
 ## Current Progress
 Phase 1: Data Exploration (Current)
