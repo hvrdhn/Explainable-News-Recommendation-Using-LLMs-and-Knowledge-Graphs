@@ -1,3 +1,5 @@
+## Folder Structure
+<pre><code>
 news_recommendation_system/
 ├── README.md
 ├── requirements.txt
@@ -73,3 +75,4 @@ news_recommendation_system/
 │   ├── train_model.py             # Model training script
 │   ├── run_evaluation.py          # Evaluation runner
 │   └── deploy_system.py           # Deployment script
+</code></pre
