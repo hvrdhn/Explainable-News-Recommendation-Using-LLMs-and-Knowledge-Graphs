@@ -5,11 +5,11 @@ news_recomm/
 │   └── mind/
 │       └── MINDsmall_train/        # MIND dataset files
 │           ├── behaviors.tsv       # User behavior logs
-│           ├── news.tsv           # News article metadata
-│           ├── entity_embedding.vec # Pre-computed entity embeddings
-│           └── relation_embedding.vec # Pre-computed relation embeddings
+│           ├── news.tsv            # News article metadata
+│           ├── entity_embedding.vec  # Entity embeddings
+│           └── relation_embedding.vec  # Relation embeddings
 └── scripts/
-    ├── check_data.py              # Data validation and inspection
+    ├── check_data.py              # Data Verification
     └── verify_setup.py            # Environment setup verification
 </code></pre>
 
