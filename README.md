@@ -14,7 +14,7 @@ news_recomm/
 </code></pre>
 
 ## Current Progress
-Phase 1: Data Exploration  
+# Phase 1: Data Exploration  
 
 Environment setup and verification Completed  
 
@@ -34,7 +34,7 @@ User behavior pattern identification
 
 Entity relationship mapping  
 
-Phase 2: Knowledge Graph Construction  
+# Phase 2: Knowledge Graph Construction  
 
 Static KG construction from MIND data  
 
