@@ -1,4 +1,4 @@
-## Folder Structure
+# Folder Structure
 <pre><code>
 news_recomm/
 ├── data/
@@ -13,8 +13,8 @@ news_recomm/
     └── verify_setup.py            # Environment setup verification
 </code></pre>
 
-## Current Progress
-# Phase 1: Data Exploration  
+# Current Progress
+## Phase 1: Data Exploration  
 
 Environment setup and verification Completed  
 
@@ -34,7 +34,7 @@ User behavior pattern identification
 
 Entity relationship mapping  
 
-# Phase 2: Knowledge Graph Construction  
+## Phase 2: Knowledge Graph Construction  
 
 Static KG construction from MIND data  
 
