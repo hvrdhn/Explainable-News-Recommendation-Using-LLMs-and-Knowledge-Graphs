@@ -14,21 +14,33 @@ news_recomm/
 </code></pre>
 
 ## Current Progress
-Phase 1: Data Exploration (Current)
+Phase 1: Data Exploration  
 
-Environment setup and verification Completed
-MIND dataset integration Completed
-Data validation scripts Completed
-Basic data exploration framework Completed
+Environment setup and verification Completed  
 
-In Progress:
+MIND dataset integration Completed  
 
-Comprehensive data analysis
-User behavior pattern identification
-Entity relationship mapping
+Data validation scripts Completed  
 
-Phase 2: Knowledge Graph Construction
-Static KG construction from MIND data
-Dynamic KG updates from NewsAPI
-Entity disambiguation and linking
-Temporal consistency management
+Basic data exploration framework Completed  
+
+
+In Progress:  
+
+
+Comprehensive data analysis  
+
+User behavior pattern identification  
+
+Entity relationship mapping  
+
+Phase 2: Knowledge Graph Construction  
+
+Static KG construction from MIND data  
+
+Dynamic KG updates from NewsAPI  
+
+Entity disambiguation and linking  
+
+Temporal consistency management  
+
