@@ -1,4 +1,4 @@
-# Explainable Real-Time News Recommendation Using LLMs and Knowledge Graphs  
+# Explainable News Recommendation Using LLMs and Knowledge Graphs  
 
 A two-component news recommendation system that combines Large Language Models (LLMs) and dynamic Knowledge Graphs (KGs) to deliver personalized, explainable, and real-time news recommendations.  
 
