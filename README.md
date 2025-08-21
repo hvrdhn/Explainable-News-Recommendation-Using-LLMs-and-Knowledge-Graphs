@@ -93,16 +93,6 @@ from llm_integration import (
     generate_llm_response
 )
 
-
-
-## Phase 3: LLM Integration
-
-from llm_integration import (
-    load_knowledge_graph, 
-    query_knowledge_graph, 
-    generate_llm_response
-)
-
 ### Load knowledge graph (from Phase 2)
 -KG = load_knowledge_graph("outputs/knowledge_graph.graphml")
 
@@ -117,25 +107,20 @@ from llm_integration import (
     Suggest 3 personalized news articles and explain why.
     """
 
--response = generate_llm_response(prompt)
-
+-response = generate_llm_response(prompt)```
+```
 
 ## Phase 4: Evaluation
 
+```python
 from evaluation import evaluate_auc, evaluate_mrr, evaluate_ndcg
+```
 
 ### Run evaluation
--auc_score   = evaluate_auc(predictions, ground_truth)
--mrr_score   = evaluate_mrr(predictions, ground_truth)
--ndcg_5      = evaluate_ndcg(predictions, ground_truth, k=5)
--ndcg_10     = evaluate_ndcg(predictions, ground_truth, k=10)
-
-### Print results
--print("Evaluation Results:")
--print(f"- AUC:     {auc_score:.4f}")
--print(f"- MRR:     {mrr_score:.4f}")
--print(f"- nDCG@5:  {ndcg_5:.4f}")
--print(f"- nDCG@10: {ndcg_10:.4f}")
+    -auc_score   = evaluate_auc(predictions, ground_truth)
+    -mrr_score   = evaluate_mrr(predictions, ground_truth)
+    -ndcg_5      = evaluate_ndcg(predictions, ground_truth, k=5)
+    -ndcg_10     = evaluate_ndcg(predictions, ground_truth, k=10)
 
 
 
