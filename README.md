@@ -78,6 +78,33 @@ from kg_construction import (
 ### Check graph statistics
 -stats = get_graph_stats(KG)
 
-### Save knowledge graph to file (e.g., GraphML or pickle)
--save_knowledge_graph(KG, "outputs/knowledge_graph.graphml")
+### Save knowledge graph to file (json or pickle)
+-save_knowledge_graph(KG, "outputs/knowledge_graph.json")
+
+
+
+# Phase 3: LLM Integration
+
+from llm_integration import (
+    load_knowledge_graph, 
+    query_knowledge_graph, 
+    generate_llm_response
+)
+
+### Load knowledge graph (from Phase 2)
+-KG = load_knowledge_graph("outputs/knowledge_graph.graphml")
+
+### Example query: retrieve news + entities for a given user
+-context = query_knowledge_graph(KG, user_id)
+
+# Pass KG context into LLM for reasoning
+-prompt = f"""
+    You are a recommendation assistant. 
+    Here is the user’s interaction context from the Knowledge Graph:
+    {context}
+    Suggest 3 personalized news articles and explain why.
+    """
+
+-response = generate_llm_response(prompt)
+
 
