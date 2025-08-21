@@ -19,34 +19,41 @@ news_recomm/
     └── verify_setup.py            # Environment setup verification
 </code></pre>
 
-# Current Progress
-## Phase 1: Data Exploration  
 
-Environment setup and verification Completed  
+# Phase 1: Data Preparation & Exploration 
 
-MIND dataset integration Completed  
+Data Preparation
 
-Data validation scripts Completed  
+Download the MIND dataset from Microsoft Research
+Extract to data/mind/MINDsmall_train/
+Ensure the following files are present:
 
-Basic data exploration framework Completed  
+news.tsv
+behaviors.tsv
+entity_embedding.vec
 
-
-In Progress:  
-
-
-Comprehensive data analysis  
-
-User behavior pattern identification  
-
-Entity relationship mapping  
+51,282 news articles
+156,965 user behavior records
+26,904 entity embeddings
+Rich metadata including categories, subcategories, and entity annotations  
+  
 
 ## Phase 2: Knowledge Graph Construction  
 
 Static KG construction from MIND data  
 
-Dynamic KG updates from NewsAPI  
+Graph Structure
 
-Entity disambiguation and linking  
+Nodes: 129,041 total
 
-Temporal consistency management  
+27,759 Entity nodes
+51,282 News nodes
+50,000 User nodes
+
+
+Edges: 7,526,846 total
+
+Entity-News relationships (mentions)
+Entity-Entity co-occurrences
+User-News interactions (clicks/views) 
 
