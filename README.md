@@ -63,29 +63,25 @@ from kg_construction import (
     save_knowledge_graph
 )
 
-# ------------------------------
-# Phase 2: Knowledge Graph Construction
-# ------------------------------
-
-# Load MIND dataset
+### Load MIND dataset
 news_df, behaviors_df, entity_embeddings = load_mind_data()
 
-# Build base knowledge graph (News + Entities)
+### Build base knowledge graph (News + Entities)
 KG = build_knowledge_graph(all_entities, entity_news_mapping, news_df)
 
-# Add user interactions (clicks/views from behaviors.tsv)
+### Add user interactions (clicks/views from behaviors.tsv)
 KG = add_user_interactions(KG, behaviors_df)
 
-# Add entity-entity co-occurrence relations (from entity embeddings or news mentions)
+### Add entity-entity co-occurrence relations (from entity embeddings or news mentions)
 KG = add_entity_relations(KG, entity_embeddings)
 
-# Check graph statistics
+### Check graph statistics
 stats = get_graph_stats(KG)
 print("Knowledge Graph Statistics:")
 for k, v in stats.items():
     print(f"- {k}: {v}")
 
-# Save knowledge graph to file (e.g., GraphML or pickle)
+### Save knowledge graph to file (e.g., GraphML or pickle)
 save_knowledge_graph(KG, "outputs/knowledge_graph.graphml")
 print("Knowledge Graph saved to outputs/knowledge_graph.graphml")
 
