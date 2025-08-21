@@ -64,22 +64,34 @@ from kg_construction import (
 )
 
 ### Load MIND dataset
--news_df, behaviors_df, entity_embeddings = load_mind_data()
+- `news_df, behaviors_df, entity_embeddings = load_mind_data()`
 
 ### Build base knowledge graph (News + Entities)
--KG = build_knowledge_graph(all_entities, entity_news_mapping, news_df)
+- `KG = build_knowledge_graph(all_entities, entity_news_mapping, news_df)`
 
 ### Add user interactions (clicks/views from behaviors.tsv)
--KG = add_user_interactions(KG, behaviors_df)
+- `KG = add_user_interactions(KG, behaviors_df)`
 
 ### Add entity-entity co-occurrence relations (from entity embeddings or news mentions)
--KG = add_entity_relations(KG, entity_embeddings)
+- `KG = add_entity_relations(KG, entity_embeddings)`
 
 ### Check graph statistics
--stats = get_graph_stats(KG)
+- `stats = get_graph_stats(KG)`
 
 ### Save knowledge graph to file (json or pickle)
--save_knowledge_graph(KG, "outputs/knowledge_graph.json")
+- `save_knowledge_graph(KG, "outputs/knowledge_graph.json")`
+
+
+---
+
+## Phase 3: LLM Integration
+
+```python
+from llm_integration import (
+    load_knowledge_graph, 
+    query_knowledge_graph, 
+    generate_llm_response
+)
 
 
 
