@@ -24,6 +24,9 @@ news_recomm/
 
 ### Data Preparation
 
+- This project uses the [MIND dataset](https://msnews.github.io/) for news recommendation tasks.  
+ > **Note:** The dataset is large and not included in this repository. Please download it directly from the official website.
+
 - Download the MIND dataset from Microsoft Research  
 - Extract to `data/mind/MINDsmall_train/`  
 - Ensure the following files are present:  
