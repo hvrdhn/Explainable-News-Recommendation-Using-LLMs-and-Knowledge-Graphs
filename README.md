@@ -83,7 +83,7 @@ from kg_construction import (
 
 
 
-# Phase 3: LLM Integration
+## Phase 3: LLM Integration
 
 from llm_integration import (
     load_knowledge_graph, 
@@ -97,7 +97,7 @@ from llm_integration import (
 ### Example query: retrieve news + entities for a given user
 -context = query_knowledge_graph(KG, user_id)
 
-# Pass KG context into LLM for reasoning
+### Pass KG context into LLM for reasoning
 -prompt = f"""
     You are a recommendation assistant. 
     Here is the user’s interaction context from the Knowledge Graph:
@@ -108,7 +108,7 @@ from llm_integration import (
 -response = generate_llm_response(prompt)
 
 
-# Phase 4: Evaluation
+## Phase 4: Evaluation
 
 from evaluation import evaluate_auc, evaluate_mrr, evaluate_ndcg
 
