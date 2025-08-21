@@ -10,13 +10,25 @@ news_recomm/
 ├── data/
 │   └── mind/
 │       └── MINDsmall_train/        # MIND dataset files
-│           ├── behaviors.tsv       # User behavior logs
-│           ├── news.tsv            # News article metadata
-│           ├── entity_embedding.vec  # Entity embeddings
-│           └── relation_embedding.vec  # Relation embeddings
+│       │    ├── behaviors.tsv       # User behavior logs
+│       │    ├── news.tsv            # News article metadata
+│       │    ├── entity_embedding.vec  # Entity embeddings
+│       │    └── relation_embedding.vec  # Relation embeddings
+│       │
+│       |──MINDsmall_test/
+│            ├── behaviors.tsv       
+│            ├── news.tsv            
+│            ├── entity_embedding.vec 
+│            └── relation_embedding.vec  
+|── notebooks/
+│      └──MINDExploration.ipynb
+│      |──KGconstruction.ipynb
+│      |──LLMintegration.ipynb
+│      |──sample_kg.pkl
+|    
 └── scripts/
-    ├── check_data.py              # Data Verification
-    └── verify_setup.py            # Environment setup verification
+       ├── check_data.py              # Data Verification
+       └── verify_setup.py            # Environment setup verification
 </code></pre>
 
 
