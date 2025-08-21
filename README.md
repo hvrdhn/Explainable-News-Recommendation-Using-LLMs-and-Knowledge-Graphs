@@ -24,36 +24,32 @@ news_recomm/
 
 Data Preparation
 
-Download the MIND dataset from Microsoft Research
-Extract to data/mind/MINDsmall_train/
+-Download the MIND dataset from Microsoft Research
+-Extract to data/mind/MINDsmall_train/
 Ensure the following files are present:
 
-news.tsv
-behaviors.tsv
-entity_embedding.vec
+-news.tsv
+-behaviors.tsv
+-entity_embedding.vec
 
-51,282 news articles
-156,965 user behavior records
-26,904 entity embeddings
-Rich metadata including categories, subcategories, and entity annotations  
+MIND Dataset has:
+    -51,282 news articles
+    -156,965 user behavior records
+    -26,904 entity embeddings
+    -Rich metadata including categories, subcategories, and entity annotations  
   
 
 ## Phase 2: Knowledge Graph Construction  
 
-Static KG construction from MIND data  
+-Static KG construction from MIND data  
 
-Graph Structure
-
-Nodes: 129,041 total
-
-27,759 Entity nodes
-51,282 News nodes
-50,000 User nodes
-
-
-Edges: 7,526,846 total
-
-Entity-News relationships (mentions)
-Entity-Entity co-occurrences
-User-News interactions (clicks/views) 
+-Graph Structure:
+    -Nodes: 129,041 total
+    -27,759 Entity nodes
+    -51,282 News nodes
+    -50,000 User nodes
+    -Edges: 7,526,846 total
+    -Entity-News relationships (mentions)
+    -Entity-Entity co-occurrences
+    -User-News interactions (clicks/views) 
 
